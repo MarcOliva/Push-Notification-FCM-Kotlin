@@ -15,7 +15,7 @@ import com.google.firebase.messaging.RemoteMessage
  */
 class MyFirebaseMessagingService : FirebaseMessagingService() {
 
-    private val TAG = this.getSystemServiceName(this.javaClass)
+    private var TAG = "MyFirebaseMessagingService"
 
     override fun onMessageReceived(remoteMessage: RemoteMessage) {
 

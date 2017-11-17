@@ -7,7 +7,7 @@ import com.google.firebase.iid.FirebaseInstanceId
 
 class MainActivity : AppCompatActivity() {
 
-    private val TAG  = this.localClassName
+    private var TAG  = "Main Activity"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

@@ -8,7 +8,7 @@ import com.google.firebase.iid.FirebaseInstanceIdService
  * Created by ThinkSoft on 16/11/2017.
  */
 class MyFirebaseInstanceIDService : FirebaseInstanceIdService() {
-    private val TAG = this.getSystemServiceName(this.javaClass)
+    private var TAG = "MyFirebaseInstanceIDService"
 
     override fun onTokenRefresh() {
         //Get updated token
