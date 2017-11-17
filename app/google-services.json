@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "615649328269",
+    "firebase_url": "https://push-notification-71b27.firebaseio.com",
+    "project_id": "push-notification-71b27",
+    "storage_bucket": "push-notification-71b27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615649328269:android:c999016bfc24b30c",
+        "android_client_info": {
+          "package_name": "com.fcm.pushnotifications.marcoliva.pushnotificationfcm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615649328269-7640lhult8uh3pbisd9e98q6ltdaaqob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUh8beR-tKbFgwjruRat4L4UVDVCNuszc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
