@@ -22,7 +22,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         Log.d(TAG, "FROM : " + remoteMessage.from)
 
         //Verify if the message contains data
-        if (remoteMessage.data.size > 0) {
+        if (remoteMessage.data.isNotEmpty()) {
             Log.d(TAG, "Message data : " + remoteMessage.data)
         }
 
@@ -40,6 +40,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         // on top of it will be closed and this Intent will be delivered to the (now on top)
         // old activity as a new Intent.
         intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+        intent.putExtra("Notification",body)
 
         var pendingIntent = PendingIntent.getActivity(this,0,intent,PendingIntent.FLAG_ONE_SHOT/*Flag indicating that this PendingIntent can be used only once.*/)
         val notificationSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
